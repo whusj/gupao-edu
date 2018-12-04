@@ -12,6 +12,7 @@
         <module>rmi-server</module>
         <module>rmi-client</module>
         <module>serializer</module>
+        <module>zookeeper-demo</module>
     </modules>
 
 

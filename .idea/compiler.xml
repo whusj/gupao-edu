@@ -9,6 +9,7 @@
         <module name="rmi-client" />
         <module name="rmi-server" />
         <module name="serializer" />
+        <module name="zookeeper-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -16,6 +17,7 @@
       <module name="rmi-client" target="1.5" />
       <module name="rmi-server" target="1.5" />
       <module name="serializer" target="1.5" />
+      <module name="zookeeper-demo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

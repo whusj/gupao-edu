@@ -13,6 +13,8 @@
         <module>rmi-client</module>
         <module>serializer</module>
         <module>zookeeper-demo</module>
+        <module>rpc-register-server</module>
+        <module>rpc-register-client</module>
     </modules>
 
 

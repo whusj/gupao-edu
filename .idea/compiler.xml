@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="rmi-client" />
         <module name="rmi-server" />
+        <module name="rpc-register-client" />
+        <module name="rpc-register-server" />
         <module name="serializer" />
         <module name="zookeeper-demo" />
       </profile>
@@ -16,8 +18,11 @@
       <module name="gupao-edu" target="1.5" />
       <module name="rmi-client" target="1.5" />
       <module name="rmi-server" target="1.5" />
+      <module name="rpc-register" target="1.8" />
+      <module name="rpc-register-client" target="1.8" />
+      <module name="rpc-register-server" target="1.8" />
       <module name="serializer" target="1.5" />
-      <module name="zookeeper-demo" target="1.5" />
+      <module name="zookeeper-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

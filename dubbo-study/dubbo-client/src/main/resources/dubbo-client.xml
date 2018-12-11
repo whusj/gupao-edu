@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans        http://www.springframework.org/schema/beans/spring-beans.xsd        http://code.alibabatech.com/schema/dubbo        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!--调用方信息-->
+    <dubbo:application name="dubbo-client" owner="songjiang"/>
+
+    <!--直连方式(未使用注册中心)
+    <dubbo:reference id="demoService" interface="com.gupaoedu.dubbo.IDemoService" url="dubbo://192.168.202.1:20880/com.gupaoedu.dubbo.IDemoService"/>
+    <dubbo:reference id="helloService" interface="com.gupaoedu.dubbo.IHelloService" url="dubbo://192.168.202.1:20880/com.gupaoedu.dubbo.IHelloService"/>
+    -->
+
+    <!--使用注册中心-->
+    <dubbo:registry address="zookeeper://192.168.202.64:2181" />
+
+    <dubbo:reference id="demoService" interface="com.gupaoedu.dubbo.IDemoService" protocol="dubbo"/>
+
+    <dubbo:reference id="helloService" interface="com.gupaoedu.dubbo.IHelloService" protocol="dubbo"/>
+
+</beans>

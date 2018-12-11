@@ -9,6 +9,6 @@ package com.gupaoedu.dubbo;
 public class HelloServiceImpl2 implements IHelloService {
     @Override
     public String sayHello(String msg) {
-        return "Hello,i'm server 2:"+msg;
+        return "Hello2: "+msg;
     }
 }
